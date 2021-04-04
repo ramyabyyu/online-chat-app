@@ -92,8 +92,8 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password) && !
     // insert user data into database
     $insert_data = mysqli_query(
         $conn, 
-        "INSERT INTO users (unique_id, fname, lname, alias_name, email, password, profile_color, status) 
-        VALUES ($unique_id, '$fname', '$lname', '$alias_name', '$email', '$password', '$profile_color', '$status')"
+        "INSERT INTO users (unique_id, fname, lname, alias_name, email, password, profile_color, status, register_at) 
+        VALUES ($unique_id, '$fname', '$lname', '$alias_name', '$email', '$password', '$profile_color', '$status', NOW())"
     );
     // var_dump($unique_id); 
     // var_dump($fname); 

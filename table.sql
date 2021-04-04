@@ -32,7 +32,8 @@ CREATE TABLE `users` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `profile_color` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL
+  `status` varchar(255) NOT NULL,
+  `register_at` DATETIME
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 

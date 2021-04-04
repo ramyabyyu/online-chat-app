@@ -37,12 +37,12 @@
                             dan segelas kopi sebagai penyemangat😎</p>
                         </div>
                         <div class="mb-3">
-                            <strong>Apakah Aplikasi Ini Aman Dari Serangan Hacker</strong>
+                            <strong>Apakah Aplikasi Ini Aman Dari Serangan Hacker??</strong>
                             <p>Oh tentu saja tidak! <br>
                             Karena saya pakai hosting gratisan. Jadi bisa aja kena hack</p>
                         </div>
                         <div class="mb-3">
-                            <strong>Berapa Hari aplikasi ini dibuat??</strong>
+                            <strong>Berapa lama aplikasi ini dibuat??</strong>
                             <p>Dari development sampai bisa online saya cuman butuh 3 hari😎</p>
                         </div>
                         <div class="mb-3">
@@ -51,7 +51,7 @@
                         </div>
                         <div class="mb-3">
                             <strong>Boleh saya bantu bagusin gak aplikasinya?</strong>
-                            <p>Boleh. Nih klik aja <i class="fas fa-arrow-right"></i> <a href="" class="link-primary">Source Code</a></p>
+                            <p>Boleh. Nih klik aja <i class="fas fa-arrow-right"></i> <a href="https://github.com/ramyabyyu/online-chat-app" target="_blank" class="link-dark">Source Code</a></p>
                         </div>
                     </div>
                 </div>
