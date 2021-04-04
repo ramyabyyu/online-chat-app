@@ -1,0 +1,55 @@
+header, .contact-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-list {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.profile-pict {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    letter-spacing: 1px;
+}
+
+.user-profile {
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+}
+
+.contact-profile {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details p {
+    margin: 0;
+}
+
+.user-details p:first-child {
+    font-weight: bold;
+}
+
+.contact-details {
+    align-items: start;
+    margin-right: 20px;
+}
+
+.contact-details p:first-child {
+    font-size: 1.2em;
+}

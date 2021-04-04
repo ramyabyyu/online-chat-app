@@ -1,0 +1,20 @@
+.pw-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    top: 31px;
+    right: 0;
+    transition: background 0.6s ease;
+    cursor: pointer;
+}
+
+.pw-btn-container:active {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.pw-btn {
+    transition: all 0.6s ease;
+}
+
