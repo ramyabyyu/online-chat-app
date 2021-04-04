@@ -52,6 +52,7 @@ if (mysqli_num_rows($query) > 0) {
                             dan kodingnya pun masih banyak yang <em>Repetitif</em> <br>
                             Maklum saya masih pemula😢</p>
                             <p>Sekiranya ada yang mau nambahin boleh ngasih <em>Pull Request</em> ke github project ini <br>
+                            Jangan lupa kasih bintang ya... <br>
                             <a href="https://github.com/ramyabyyu/online-chat-app" target="_blank" class="link-dark">Source Code</a></p>
                         </div>
                     </div>
