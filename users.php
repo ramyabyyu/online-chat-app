@@ -46,31 +46,37 @@ if (mysqli_num_rows($user_query) > 0) {
                         </header>
                         <!-- Search Bar -->
                         <div class="d-flex">
-                            <input type="search" class="my-3 form-control" placeholder="Cari...">
-                            <button class="btn"><i class="fas fa-search"></i></button>
+                            <input type="text" class="my-3 form-control" placeholder="Cari..." id="search-bar" autocomplete="off">
+                            <button class="btn" id="search-btn"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Contact Section -->
+        <?php
+            $query = mysqli_query($conn, "SELECT * FROM users WHERE NOT unique_id = '$unique_id'");
+        ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card rounded shadow">
-                    <div class="card-body">
-                        <a class="px-2 p-4 contact-list mb-3" href="#">
-                            <!-- Profile -->
-                            <div class="profile-pict contact-profile" style="background: darkorange;">SY</div>
-                            <!-- Contact Details -->
-                            <div class="details contact-details">
-                                <p>Siapa Ya</p>
-                                <p>Hallo Apa Kabar</p>
-                            </div>
-                            <!-- Status ; active = #4bb543 ; inactive = #d3d3d3 -->
-                            <div class="contact-status" style="color: #4bb543;">
-                                <i class="fas fa-circle"></i>
-                            </div>
-                        </a>
+                    <div class="card-body" id="contact-list-container">
+                        <?php foreach ($query as $row) : ?>
+                            <?php $status = $row["status"] == "Aktif" ? "#4bb543" : "#d3d3d3"; ?>
+                            <a class="px-2 p-4 contact-list mb-3" href="#">
+                                <!-- Profile -->
+                                <div class="profile-pict contact-profile" style="background: <?= $row["profile_color"]; ?>;"><?= $row["alias_name"]; ?></div>
+                                <!-- Contact Details -->
+                                <div class="details contact-details">
+                                    <p><?= $row["fname"]. ' ' .$row["lname"]; ?></p>
+                                    <p>Hallo Apa Kabar</p>
+                                </div>
+                                <!-- Status ; active = #4bb543 ; inactive = #d3d3d3 -->
+                                <div class="contact-status" style="color: <?= $status; ?>;">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
@@ -78,5 +84,6 @@ if (mysqli_num_rows($user_query) > 0) {
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="./js/users.js"></script>
 </body>
 </html>
