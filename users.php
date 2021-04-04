@@ -46,7 +46,7 @@ if (mysqli_num_rows($user_query) > 0) {
                         </header>
                         <!-- Search Bar -->
                         <div class="d-flex">
-                            <input type="text" class="my-3 form-control" placeholder="Cari..." id="search-bar" autocomplete="off">
+                            <input type="text" class="my-3 form-control" placeholder="Cari berdasarkan nama..." id="search-bar" autocomplete="off">
                             <button class="btn" id="search-btn"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
@@ -54,29 +54,11 @@ if (mysqli_num_rows($user_query) > 0) {
             </div>
         </div>
         <!-- Contact Section -->
-        <?php
-            $query = mysqli_query($conn, "SELECT * FROM users WHERE NOT unique_id = '$unique_id'");
-        ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card rounded shadow">
                     <div class="card-body" id="contact-list-container">
-                        <?php foreach ($query as $row) : ?>
-                            <?php $status = $row["status"] == "Aktif" ? "#4bb543" : "#d3d3d3"; ?>
-                            <a class="px-2 p-4 contact-list mb-3" href="chat.php?id=<?= $row["unique_id"] ?>">
-                                <!-- Profile -->
-                                <div class="profile-pict contact-profile" style="background: <?= $row["profile_color"]; ?>;"><?= $row["alias_name"]; ?></div>
-                                <!-- Contact Details -->
-                                <div class="details contact-details">
-                                    <p><?= $row["fname"]. ' ' .$row["lname"]; ?></p>
-                                    <p>Hallo Apa Kabar</p>
-                                </div>
-                                <!-- Status ; active = #4bb543 ; inactive = #d3d3d3 -->
-                                <div class="contact-status" style="color: <?= $status; ?>;">
-                                    <i class="fas fa-circle"></i>
-                                </div>
-                            </a>
-                        <?php endforeach; ?>
+                        
                     </div>
                 </div>
             </div>
