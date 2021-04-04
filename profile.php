@@ -48,6 +48,7 @@ if (mysqli_num_rows($query) > 0) {
                         <div class="my-3">
                             <p>Maaf apabila aplikasi ini masih banyak kekurangannya. <br>
                             Fiturnya masih dikit <br>
+                            UI nya masih berantakan <br>
                             Belum bisa upload poto <em>Profile</em> <br>
                             dan kodingnya pun masih banyak yang <em>Repetitif</em> <br>
                             Maklum saya masih pemula😢</p>
