@@ -4,6 +4,19 @@ header {
     align-items: center;
 }
 
+.back-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.6s ease;
+}
+
+.back-link:active {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .contact-profile {
     display: flex;
     justify-content: center;

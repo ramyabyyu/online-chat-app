@@ -63,7 +63,7 @@ if (mysqli_num_rows($user_query) > 0) {
                     <div class="card-body" id="contact-list-container">
                         <?php foreach ($query as $row) : ?>
                             <?php $status = $row["status"] == "Aktif" ? "#4bb543" : "#d3d3d3"; ?>
-                            <a class="px-2 p-4 contact-list mb-3" href="#">
+                            <a class="px-2 p-4 contact-list mb-3" href="chat.php?id=<?= $row["unique_id"] ?>">
                                 <!-- Profile -->
                                 <div class="profile-pict contact-profile" style="background: <?= $row["profile_color"]; ?>;"><?= $row["alias_name"]; ?></div>
                                 <!-- Contact Details -->
