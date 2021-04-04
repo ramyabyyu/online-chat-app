@@ -25,6 +25,10 @@
                             </div>
                             <div class="mb-3 d-grid">
                                 <button type="submit" class="btn btn-dark">Login</button>
+                                <button type="button" class="btn btn-dark disabled d-none">
+                                    <i class="fas fa-spinner"></i>
+                                    Oke Bentar...
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -35,5 +39,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="./js/show-pw.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

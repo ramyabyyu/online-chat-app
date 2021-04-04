@@ -40,7 +40,7 @@ if (mysqli_num_rows($user_query) > 0) {
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="profile.php?id=<?= $row["unique_id"]; ?>">Profile &nbsp; <i class="fas fa-user"></i></a></li>
-                                    <li><a class="dropdown-item" href="#">Logout &nbsp; <i class="fas fa-sign-out-alt"></i></a></li>
+                                    <li><a class="dropdown-item" href="php/logout.php?id=<?= $row["unique_id"]; ?>">Logout &nbsp; <i class="fas fa-sign-out-alt"></i></a></li>
                                 </ul>
                             </div>
                         </header>
